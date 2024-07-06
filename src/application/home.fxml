@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="bp" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.homecontroller">
+   <left>
+      <AnchorPane fx:id="ap" prefHeight="430.0" prefWidth="118.0" style="-fx-background-color: #b4b4b4;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="addAdmin" layoutY="47.0" mnemonicParsing="false" onAction="#createAdminListener" prefHeight="42.0" prefWidth="115.0" text="Add Admin" />
+            <Button fx:id="addUser" layoutY="89.0" mnemonicParsing="false" onAction="#addUserListener" prefHeight="42.0" prefWidth="115.0" text="Add User" />
+            <Button fx:id="listUser" layoutY="131.0" mnemonicParsing="false" onAction="#listUserListener" prefHeight="42.0" prefWidth="115.0" text="List User" />
+            <Button fx:id="addBill" layoutY="173.0" mnemonicParsing="false" onAction="#addBillListener" prefHeight="42.0" prefWidth="115.0" text="Add Bill" />
+            <Button fx:id="payBill" layoutY="215.0" mnemonicParsing="false" onAction="#payBillListener" prefHeight="42.0" prefWidth="115.0" text="Pay Bill" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane fx:id="ap1" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #f0f0f0;" />
+   </center>
+   <top>
+      <Label alignment="CENTER" prefHeight="27.0" prefWidth="602.0" style="-fx-background-color: #879ec5;" text="Energy Managment System" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </top>
+</BorderPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="480.0" style="-fx-background-color: #f0f0f0;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UserBillController">
+   <children>
+      <TextField fx:id="name" layoutX="14.0" layoutY="31.0" promptText="Name" />
+      <TextField fx:id="houseNo" layoutX="14.0" layoutY="82.0" promptText="House No" />
+      <DatePicker fx:id="startDatePicker" layoutX="14.0" layoutY="210.0" promptText="Start Date" />
+      <DatePicker fx:id="endDatePicker" layoutX="248.0" layoutY="210.0" promptText="End Date" />
+      <TextField fx:id="pinCode" layoutX="13.0" layoutY="138.0" prefHeight="26.0" prefWidth="150.0" promptText="Pin Code" />
+      <TextField fx:id="startReading" layoutX="247.0" layoutY="31.0" prefHeight="38.0" prefWidth="150.0" promptText="Start Reading" />
+      <TextField fx:id="endReading" layoutX="247.0" layoutY="119.0" prefHeight="38.0" prefWidth="150.0" promptText="End reading" />
+      <Button fx:id="addBillButton" contentDisplay="CENTER" layoutX="164.0" layoutY="313.0" mnemonicParsing="false" onAction="#addBillButtonListener" prefHeight="47.0" prefWidth="82.0" text="Add Bill" />
+      <Label fx:id="outputLabel" alignment="CENTER" layoutX="10.0" layoutY="259.0" prefHeight="38.0" prefWidth="455.0" />
+   </children>
+</AnchorPane>
